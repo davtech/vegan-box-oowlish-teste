@@ -1,0 +1,118 @@
+// =====================
+// Banner
+
+// Style for plugin slick
+.banner{
+    .slick-dots{
+        position: absolute;
+        bottom: 2rem;
+    }
+    .slick-dots li button{
+        color: $yellow;
+        &:before{
+            font-size: 1.3rem;
+            color: $yellow;
+        }
+    }
+    .slick-dots li.slick-active button:before{
+        color: $dark-green;
+    }
+}
+
+.banner__container-img{
+    width: 100%;
+    overflow: hidden;    
+    img{
+        width: 100% ;      
+    }
+}
+
+.banner__img-desktop {
+    @include respond-to('tablet') {
+        display: none !important;
+    }
+}
+.banner__img-resp {
+    display: none !important;
+    @include respond-to('tablet') {
+        display: block !important;
+    }
+}
+
+// FIM BANNER
+
+// =====================
+// Info
+
+.info {
+    position: relative;
+    top: -0.3rem;
+}
+
+.slogan{
+    width: 50%;
+    float: left;
+    padding-right: 1.5rem;
+    background: $light-green;
+    padding-left: 18rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include respond-to('wrapper') {
+        // width: 100%;
+        // float: none;
+        overflow: hidden;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;        
+    }
+    @include respond-to('tablet') {
+        width: 100%;;
+    }
+}
+.slogan__logo{
+    // width: 20%;
+    float: left;
+    padding-right: 5rem;
+    overflow: hidden;
+    img{
+        display: block;
+    }
+}
+.slogan__text{
+    margin-top: 2rem;
+    float: left;
+    h2{
+        color: $white;
+        font-size: 2.3rem;
+        letter-spacing: 0.08rem;
+    }
+    span {
+        font-weight: 500;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.7rem;
+    }
+}
+.call-to-action{
+    width: 50%;
+    float: left;
+    padding-left: 1.5rem;
+    background: $dark-green;
+    text-align: center;
+    padding-right: 18rem;
+    padding-left: 5rem;
+    padding-top: 3rem;
+    min-height:16.7rem;
+
+    p{
+        color: $white;
+        padding-bottom: 3rem;
+        line-height: 2rem;
+    }
+    strong{
+        color: $yellow;
+    }
+    a{
+        text-align: center;
+    }
+}

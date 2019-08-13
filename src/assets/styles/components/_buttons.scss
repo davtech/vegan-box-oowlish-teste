@@ -1,0 +1,36 @@
+.btn {
+    display: inline;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: $light-green;;
+    border-radius: 0.3rem;
+    border: 1px solid $light-green;
+
+    &,
+    &:active,
+    &.active {
+      &:focus,
+      &.focus {
+        text-decoration: none;
+      }
+    }
+  
+    &:hover,
+    &:focus,
+    &.focus {
+      text-decoration: none;
+    }
+  
+    &:active,
+    &.active {
+      background-image: none;
+      outline: 0;
+    }  
+}
+
+.btn--cta {
+  background: $yellow;
+  color: $dark-green;
+  font-weight: 700;
+  border: none;
+}

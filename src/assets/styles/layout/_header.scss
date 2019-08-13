@@ -1,26 +1,60 @@
-header {
-  background: $light-grey;
+header{
+    width: 100%;
+    background: rgba(255,255,222,0.8);
+    padding: 1rem 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+
+    @include respond-to('tablet') {
+        position: relative;
+    }
+
+}
+.header__logo{
+    float: left;
+    img{
+        max-width: 5rem;
+        width: 100%;
+    }
+}
+.header__container-elements{
+    float: right;
+    max-width: fit-content;
+    margin-top: 2.3rem;
+}
+.header__nav {
+    float: left;
+    margin-right: 2rem;
+}
+.header__ul {
+    margin: 0;
+    list-style: none;
+    li{
+        display: inline;
+        padding: 0 1rem;
+    }
+}
+.header__a {
+    color: $light-green;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+}
+.header__search{
+    float: left;
+    margin-right: 1rem;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid $grey;
-  .link {
-    &:hover {
-      color: darken($color-primary, 15);
-    }
-  }
-  .logo-link {
-    padding: 10px 10px;
-    margin-right: 10px;
-    border-right: 1px solid $grey;
-    &:hover {
-      background: $pink;
-    }
-  }
-  .logo-img {
-    width: 25px;
-    height: 25px;
-  }
+.header__input{
+    background: $light-yellow;
+    border: 1px solid $light-green;
+    padding: 1rem 2rem;
+    position: relative;
+    top: -1.1rem;
+    border-radius: 0.3rem;
+}
+.header__cta{
+    float: left;
 }

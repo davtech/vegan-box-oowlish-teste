@@ -1,0 +1,31 @@
+
+// ===================
+//! set font variables
+// ===================
+$font-body: 'Lato',sans-serif;
+
+
+//! Colors
+
+$black: #000000;
+$white: #ffffff;
+
+
+$light-green: #7B8C34;
+$dark-green: #535A4D;
+
+$yellow: #E3B01B;
+$light-yellow: #FFFCDE;
+
+
+$gray: #E7EDE2;
+$purple: #712761;
+$red: #870200;
+
+
+$color-primary: $light-green;
+$color-secondary: $yellow;
+$color-tertiary: $dark-green;
+
+/// Container's maximum width
+$max-width: 1280px !default;

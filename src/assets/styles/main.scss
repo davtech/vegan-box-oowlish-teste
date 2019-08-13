@@ -1,15 +1,24 @@
-//! utilities
-@import "./utils/mixins";              // global mixins
-@import "./utils/variables";           // global variables
+//! abstract
+@import "./abstracts/mixins";              // global mixins
+@import "./abstracts/variables";           // global variables
 
-//! setup
-@import "./setup/normalize";           // normalize browsers to make more consistent
-@import "./setup/clearfix";             // clearfix for floats
-@import "./setup/border-box";          // global border-box setting
+//! helpers
+@import "./helpers/clearfix";            // clearfix for floats
+@import "./helpers/border-box";          // global border-box setting
+@import "./helpers/container";           // set width max layout
 
 //! global styles
 @import "./global/typography";         // global typography
 @import "./global/global";             // global styles
 
-//! sections
-@import "./layout/header";
+//! components
+@import "./components/buttons";
+
+//! sections layouts
+@import "./layout/header";  
+
+//! pages => ideally use with styled components 
+@import "./pages/inicio";
+
+//! vendor
+@import "./vendor/normalize";           // normalize browsers to make more consistent
